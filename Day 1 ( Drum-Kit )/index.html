@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>Drum Kit</title>
+</head>
+<body>
+    <div class="items"> 
+        <div id="001">
+        <button onclick="playSound()" class="btn" type="button">A
+            <span class="btn-element">Clap</span>
+        </button>
+        </div>
+        <div id="002">           
+        <button onclick="playSound2()" class="btn" type="button">S
+             <span class="btn-element">Hihat</span>
+        </button>
+        </div>        
+        <div id="003"> 
+        <button onclick="playSound3()" class="btn" type="button">D
+             <span class="btn-element">Kick</span>
+        </button>
+        </div>
+        <div id="004"> 
+        <button onclick="playSound4()" class="btn" type="button">F
+             <span class="btn-element">OpenHat</span>
+        </button>
+        </div>
+        <div id="005"> 
+        <button onclick="playSound5()" class="btn" type="button">G
+             <span class="btn-element">Boom</span>
+        </button>
+        </div>
+        <div id="006"> 
+        <button onclick="playSound6()" class="btn" type="button">H
+             <span class="btn-element">Ride</span>
+        </button>
+        </div>
+        <div id="007"> 
+        <button onclick="playSound7()" class="btn" type="button">J
+             <span class="btn-element">Snare</span>
+        </button>
+        </div>
+        <div id="008"> 
+        <button onclick="playSound8()" class="btn" type="button">K
+             <span class="btn-element">Tom</span>
+        </button>
+        </div>
+        <div id="009"> 
+        <button onclick="playSound9()" class="btn" type="button">L
+             <span class="btn-element">Tink</span>
+        </button>
+        </div>
+    </div>
+
+<audio id="01" src="clap.mp3"></audio>    
+<audio id="02" src="Hihat.mp3"></audio>    
+<audio id="03" src="kick.mp3"></audio>    
+<audio id="04" src="Open Hat.mp3"></audio>    
+<audio id="05" src="Boom.mp3"></audio>    
+<audio id="06" src="Ride.mp3"></audio>    
+<audio id="07" src="snare.mp3"></audio>    
+<audio id="08" src="tom.mp3"></audio>    
+<audio id="09" src="tink.mp3"></audio>  
+
+<script src="script.js"></script>
+</body>
+</html>

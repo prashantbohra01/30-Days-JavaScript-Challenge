@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url('concert.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.items .btn{
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid black;
+    color: black;
+    font-weight: 300;
+}
+.btn .btn-element{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+button{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+    background-color: cyan;
+}
+button:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
