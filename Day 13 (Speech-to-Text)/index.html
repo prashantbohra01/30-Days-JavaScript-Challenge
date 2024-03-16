@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Speech to text</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Speech to text Converter</h1>
+        <div class="textarea">
+            <textarea id="output" rows="4" cols="50"></textarea>
+        </div>
+        <div class="button-container">
+            <button id="start-btn">Start</button>
+            <button id="stop-btn">Stop</button>
+        </div>
+    </div>
+
+
+<script>
+
+    const recognition = new webkitSpeechRecognition();
+    recognition.lang = 'en-US';
+    recognition.interimResults = true;
+    recognition.continuous = true;
+    
+    document.getElementById('start-btn').onclick = () => recognition.start();
+    document.getElementById('stop-btn').onclick = () => recognition.stop();
+
+    recognition.onresult = event => {
+        output.value = event.results[event.results.length -1][0].transcript;
+    }
+    navigator.mediaDevices.getUserMedia({ audio: true});
+
+
+</script>    
+</body>
+</html>

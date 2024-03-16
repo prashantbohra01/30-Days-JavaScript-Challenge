@@ -23,6 +23,8 @@
 }
 .container h1 span{
     color: #ff2963;
+    margin-left: 12px;
+    text-decoration: underline #ff2963;
 }
 textarea{
     width: 600px;
