@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    height: 420px;
+    width: 320px;
+    background-image: url(luffy.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow:  0 15px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.container .heart{
+    position: absolute;
+    font-size: 40px;
+    color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+.heart.active{
+    animation: heartBeat 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    display: block;
+}
+@keyframes heartBeat {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    5% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+    15% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    25% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+    35% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
