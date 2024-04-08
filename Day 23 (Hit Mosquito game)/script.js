@@ -13,7 +13,7 @@ let time = setInterval(() => {
     let j = Math.floor(Math.random()*600)+1;
     mosquito.style.left=i+"px";
     mosquito.style.top=j+"px";
-}, 900);
+}, 1100);
 
 setTimeout(()=>{
     clearTimeout(time);
